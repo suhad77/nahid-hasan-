@@ -31,7 +31,7 @@ a{
     margin: 0;
 }
 #hero{
-    background-image: url(../image/hero-bg.jpg);
+    background-image: url(../../image/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -241,7 +241,7 @@ a{
     color: #ffad18;
 }
 #testimonial{
-    background-image: url(../image/testimonial-3-bg.jpg);
+    background-image: url(../../image/testimonial-3-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
