@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 h2 h3 h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #515050;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.pd-0{
+    padding: 0;
+    margin: 0;
+}
+#hero{
+    background-image: url(../image/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+#hero::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #2c3c5e;
+    opacity: .57;
+}
+#hero .container {
+    position: relative;
+    z-index: 5;
+}
+.hero-title{
+    padding: 185px 0 122px;
+}
+.hero-title h1{
+    color: #ffff;
+    position: relative;
+    font-size: 52px;
+    line-height: 62px;
+}
+.hero-title h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: #ffad18;
+}
+.breadcrumb-link{
+    padding-bottom: 39px;
+}
+.breadcrumb-link ul{
+    display: flex;
+    padding: none;
+}
+.flat-list{
+    position: relative;
+}
+.flat-list::after {
+    position: absolute;
+    content: '/';
+    top: 50%;
+    left: 100%;
+    transform: translate(50%, -50%);
+    color: #fff;
+}
+.breadcrumb-link ul li a {
+    padding: 0 7px;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 0px 3px 7px rgb(71 71 71 / 35%);
+    display: inline-block;
+}
+.breadcrumb-link ul li:last-child a {
+    color: #ffad18;
+    cursor: text;
+}
+#practice-areas{
+    padding: 110px 0;
+}
+.practice-title{
+    margin-bottom: 80px;
+}
+.practice-title h2{
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    position: relative;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    line-height: 19px;
+}
+.practice-title h2::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffad18;
+    width: 30px;
+    height: 2px;
+}
+.practice-title p{
+        max-width: 655px;
+        margin: auto;
+        color: #3b3b3b;
+}
+.practice-heading{
+    background: #ffad18;
+    padding: 25px 0px;
+}
+.practice-heading p {
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.prac-sb-list ul {
+    border: 1px solid #b7b7b7;
+    border-bottom: none;
+}
+.prac-sb-list ul li {
+    border-bottom: 1px solid #b7b7b7;
+    list-style: none;
+    transition: all .5s ease-in-out;
+}
+.prac-sb-list ul li a {
+    color: #585858;
+    font-size: 16px;
+    padding: 22px 0px 22px 50px;
+    display: block;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.prac-sb-list ul li a::after {
+    position: absolute;
+    content: '\f0a9';
+    font-family: FontAwesome;
+    top: 22px;
+    left: 25px;
+    height: 10px;
+    width: 10px;
+    color: #585858;
+    transition: all .3s ease-in-out;
+}
+.prac-sb-list ul li:hover a{
+    background-color: #3c3c3c;
+    color: #fff;
+}
+.prac-sb-list ul li a:hover::after{
+    color: #fff;
+}
+.single-practics {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #3c3c3c34;
+}
+.pra-img img{
+    width: 100%;
+}
+.pra-cont h3 {
+    font-size: 16px;
+    color: #3c3c3c;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.pra-cont p {
+    color: #6b6969;
+}
+.pra-cont a {
+    padding: 12px 25px;
+    background: #ffad18;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 33px;
+    text-transform: uppercase;
+}
+.pra-cont a:hover{
+    background-color: #3c3c3c;
+    color: #fff;
+}
+.pra-pagination {
+    margin-left: 30px;
+    margin-top: 65px;
+    display: block;
+    overflow: hidden;
+}
+.pra-pagination ul li {
+    display: inline;
+    margin-right: 5px;
+}
+.pra-pagination ul li a {
+    font-size: 16px;
+    color: #3c3c3c;
+    border: 1px solid #b7b7b7;
+    padding: 5px 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.pra-pagination ul li.active a{
+    color: #ffad18;
+}
+.pra-pagination ul li a:hover{
+    color: #ffad18;
+}
+#testimonial{
+    background-image: url(../image/testimonial-3-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+#testimonial::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(36, 36, 36, 0.9);
+}
+.practice-title{
+    z-index: 999;
+}
+.ptb-110{
+    padding: 110px 0;
+}
+.write {
+    color: #ffffff !important;
+    z-index: 9999;
+}
+.write span{
+    color: #ffad18;
+}
+
+.person-3-commment h3 {
+    z-index: 999;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 30px;
+    font-weight: 300;
+    padding-top: 18px;
+    letter-spacing: .3px;
+}
+.person-3-comment h3::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffad18;
+    width: 30px;
+    height: 1px;
+}
+.person-3-comment i {
+    font-size: 55px;
+    color: #ffad18;
+    text-transform: uppercase;
+}
