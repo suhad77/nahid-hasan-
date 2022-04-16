@@ -1,0 +1,22 @@
+#map {
+    margin-top: 20px;
+    height: 500px;
+}
+
+@font-face {
+    font-family: custom;
+    src: url("https://raw.githubusercontent.com/Cmatttt/Google-maps-api-test/master/assets/fonts/SteelrDemo.ttf") format("truetype");
+}
+
+h1 {
+    font-family: custom, Arial;
+}
+
+@media only screen and (max-width: 500px) {
+  .hex-area li {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
